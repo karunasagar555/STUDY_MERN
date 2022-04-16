@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "puppeteer": "^13.5.2",
+    "xlsx": "^0.18.5"
+  }
+}
