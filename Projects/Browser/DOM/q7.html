@@ -37,7 +37,7 @@
       // also it should only allow to type if the shift in pressed down.
         let inputBox = document.querySelector("#pass");
         let message = document.querySelector("p");
-        //let isShift = false;
+        
 
         inputBox.addEventListener("keypress", function(e){
             //getmodifierState returns boolean whether CapsLock is on(true) or off(false)
@@ -52,22 +52,16 @@
             
         })
 
-        // // SHIFT
+        //what is the Difference between keypress and keydown ???? (INTERVIEW QUESTION)
         document.addEventListener("keypress", function(e){ 
             //keypress does not recognize modifierkeys like ctl,alt,shift.enter etcc...(basically it recognizes only charaters)
-            // if(e.key == "Shift")
-            // {
-            //     // isShift=true;
-            // }
+            
             console.log(e.key);
         })
 
         document.addEventListener("keydown", function(e){
             //keydown recognizes characters as well as modifierkeys
-            // if(e.key== "Shift")
-            // {
-            //     isShift = false;
-            // }
+            console.log(e.key);
         })
     
     </script>
