@@ -53,19 +53,22 @@
         })
 
         // // SHIFT
-        // document.addEventListener("keydown", function(e){
-        //     if(e.key == "Shift")
-        //     {
-        //         isShift=true;
-        //     }
-        // })
+        document.addEventListener("keypress", function(e){ 
+            //keypress does not recognize modifierkeys like ctl,alt,shift.enter etcc...(basically it recognizes only charaters)
+            // if(e.key == "Shift")
+            // {
+            //     // isShift=true;
+            // }
+            console.log(e.key);
+        })
 
-        // document.addEventListener("keyup", function(e){
-        //     if(e.key== "Shift")
-        //     {
-        //         isShift = false;
-        //     }
-        // })
+        document.addEventListener("keydown", function(e){
+            //keydown recognizes characters as well as modifierkeys
+            // if(e.key== "Shift")
+            // {
+            //     isShift = false;
+            // }
+        })
     
     </script>
     
